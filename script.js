@@ -1,4 +1,5 @@
 const addButton = document.getElementById("add-button");
+const todoList = document.getElementById("todo-list");
 
 addButton.addEventListener("click", function () {
 
