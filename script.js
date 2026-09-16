@@ -1,1 +1,7 @@
-alert("JavaScriptが読み込まれました！");
+const addButton = document.getElementById("add-button");
+
+addButton.addEventListener("click", function () {
+    
+    alert("ボタンが押されました！");
+
+});
