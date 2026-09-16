@@ -3,7 +3,7 @@ const todoList = document.getElementById("todo-list");
 
 addButton.addEventListener("click", function () {
 
-    const questName = prompt("新しいQuestの名前を入力してください");
+    const questName = prompt("新しいQuestの名前を入力");
 
     const newTodo = document.createElement("p");
 
