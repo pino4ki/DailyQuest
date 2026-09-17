@@ -14,3 +14,4 @@ addButton.addEventListener("click", function () {
     todoList.appendChild(newTodo);
 
 });
+const todos = document.querySelectorAll(".todo");
