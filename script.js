@@ -15,3 +15,10 @@ addButton.addEventListener("click", function () {
 
 });
 const todos = document.querySelectorAll(".todo");
+todos.forEach(function(todo) {
+
+    todo.addEventListener("click", function() {
+        alert("このToDoがクリックされました！");
+    });
+
+});
