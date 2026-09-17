@@ -18,7 +18,7 @@ const todos = document.querySelectorAll(".todo");
 todos.forEach(function(todo) {
 
     todo.addEventListener("click", function() {
-        alert("このToDoがクリックされました！");
+      todo.textContent = "✅" + todo.textContent.substring(1);
     });
 
 });
