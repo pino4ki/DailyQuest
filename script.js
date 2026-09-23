@@ -21,8 +21,12 @@ newTodo.addEventListener("click", function() {
 const todos = document.querySelectorAll(".todo");
 todos.forEach(function(todo) {
 
-    todo.addEventListener("click", function() {
-      todo.textContent = "✅" + todo.textContent.substring(1);
-    });
+todo.addEventListener("click", function() {
+
+    if (todo.textContent.startsWith("□")) {
+        todo.textContent = "✅" + todo.textContent.substring(1);
+    } else {
+        todo.textContent = "□" + todo.textContent.substring(1);
+    }
 
 });
