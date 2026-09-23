@@ -11,6 +11,10 @@ addButton.addEventListener("click", function () {
     
     newTodo.textContent = "□" + questName;
 
+newTodo.addEventListener("click", function() {
+    newTodo.textContent = "✅" + newTodo.textContent.substring(1);
+});
+
     todoList.appendChild(newTodo);
 
 });
