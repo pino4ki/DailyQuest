@@ -30,3 +30,4 @@ todo.addEventListener("click", function() {
     }
 
 });
+});
