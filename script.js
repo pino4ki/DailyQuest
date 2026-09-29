@@ -4,6 +4,7 @@ const todoList = document.getElementById("todo-list");
 
 const xpText = document.getElementById("xp-text");
 const xpProgress = document.getElementById("xp-progress");
+const levelText = document.getElementById("level-text");
 
 // 現在の経験値
 let xp = 350;
@@ -12,13 +13,21 @@ let xp = 350;
 const maxXp = 500;
 
 // XPの表示を更新する
+
 function updateXP() {
 
-    xpText.textContent = "XP " + xp + "/" + maxXp;
+    const level = 5 + Math.floor(xp / maxXp);
 
-    xpProgress.style.width = (xp / maxXp * 100) + "%";
+    const currentXP = xp % maxXp;
+
+    levelText.textContent = "Lv." + level;
+
+    xpText.textContent = "XP " + currentXP + "/" + maxXp;
+
+    xpProgress.style.width = (currentXP / maxXp * 100) + "%";
 
 }
+
 
 // ToDoの完了・未完了を切り替える
 function toggleTodo(todo) {
